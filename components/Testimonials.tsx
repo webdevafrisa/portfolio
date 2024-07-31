@@ -60,7 +60,7 @@ const TestimonialCard: FC<TestimonalCardProps> = ({
 }) => {
   return (
     <div
-      className={`card-shadow dark:border-neutral-90 relative flex h-auto max-w-[22rem] select-none flex-col items-start justify-center overflow-hidden rounded-2xl border border-neutral-100 p-5 shadow-sm transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-sm dark:border-neutral-800 dark:hover:shadow-white/10`}
+      className={`card-shadow bg-white relative flex h-auto max-w-[22rem] select-none flex-col items-start justify-center overflow-hidden rounded-2xl border  p-5 shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-sm `}
     >
       <div className="absolute right-0 top-0 h-24 w-24 rounded-2xl bg-gradient-to-r from-[#fb3a5d]  to-[#fb3a5d] opacity-20 blur-3xl"></div>
       <div className="mb-0 flex h-fit flex-row items-center gap-3">
@@ -72,15 +72,15 @@ const TestimonialCard: FC<TestimonalCardProps> = ({
           height={80}
         />
         <div className="mb-0 flex h-fit flex-col items-start">
-          <h3 className="m-0 text-base font-medium text-gray-900 dark:text-gray-100">
+          <h3 className="m-0 text-base font-medium text-gray-900 ">
             {name}
           </h3>
-          <p className="font-regular m-0 text-center text-sm text-gray-600 dark:text-gray-400">
+          <p className="font-regular m-0 text-center text-sm text-gray-600 ">
             {profession}
           </p>
         </div>
       </div>
-      <p className="mb-0 mt-3 text-left text-sm font-light text-gray-600 md:text-base dark:text-gray-400">
+      <p className="mb-0 mt-3 text-left text-sm font-light text-gray-600 md:text-base ">
         {description}
       </p>
     </div>
@@ -89,11 +89,11 @@ const TestimonialCard: FC<TestimonalCardProps> = ({
 
 const Testimonals = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-5 py-12">
-      <h1 className="mb-1 max-w-2xl text-center text-2xl font-semibold tracking-tighter text-gray-900 md:text-4xl dark:text-gray-100">
+    <div className="flex flex-col items-center justify-center gap-5 py-12 max-w-[85rem] w-full scroll-mt-12 snap-start" id='whyUs'>
+      <h1 className="mb-1 max-w-2xl text-center text-2xl font-semibold tracking-tighter text-gray-900 md:text-4xl ">
         Why people love SyntaxUI
       </h1>
-      <p className="max-w-2xl text-center text-sm font-light text-gray-600 md:text-base dark:text-gray-400">
+      <p className="max-w-2xl text-center text-sm font-light text-gray-600 md:text-base ">
         SyntaxUI is loved by the community and is used by many companies. It is
         a great tool for rapid development and launching projects.
       </p>

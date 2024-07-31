@@ -1,16 +1,4 @@
-// Instructions for integrating continuous logo animation in Tailwind CSS:
-// Add the following configurations to the `extend` section of your `tailwind.config.js`:
-// 1. Keyframes for 'logo-cloud' animation that continuously moves logos from right to left:
-//    keyframes: {
-//      'logo-cloud': {
-//        from: { transform: 'translateX(0)' },
-//        to: { transform: 'translateX(calc(-100% - 4rem))' },
-//      },
-//    }
-// 2. Animation utility to apply this keyframe:
-//    animation: {
-//      'logo-cloud': 'logo-cloud 30s linear infinite', // Adjust duration and timing as needed for your design.
-//    }
+
 
 const logos = [
     {
@@ -74,7 +62,7 @@ const logos = [
                     <img
                       key={key}
                       src={logo.url}
-                      className="h-10 w-28 px-2 brightness-0  dark:invert"
+                      className="h-10 w-28 px-2 brightness-0  "
                       alt={`${logo.name}`}
                     />
                   ))}
